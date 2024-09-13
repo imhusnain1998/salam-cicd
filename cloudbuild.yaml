@@ -29,7 +29,7 @@ steps:
   - -c
   - |
     gcloud deploy apply --file deploy/pipeline.yaml --region=me-central1
-    gcloud deploy apply --file deploy/dev.yaml --region=me-central1
+    gcloud deploy apply --file deploy/uat.yaml --region=me-central1
     gcloud deploy releases create 'app-release-${SHORT_SHA}' --delivery-pipeline=salam-cicd-pipeline --region=me-central1 --skaffold-file=skaffold.yaml
 
 
