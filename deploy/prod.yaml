@@ -7,5 +7,5 @@ metadata:
 description: prod
 requireApproval: true
 gke:
-  cluster: projects/prj-poc-001/locations/us-central1-c/clusters/cluster-2
+  cluster: projects/bsp-project-424715/locations/me-central1/clusters/autopilot-cluster-1-farhan
 
