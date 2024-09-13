@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-deployment
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: my-app
@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
         - name: my-container
-          image: us-central1-docker.pkg.dev/prj-poc-001/gke-repo/quickstart-image
+          image: me-central1-docker.pkg.dev/bsp-project-424715/ci-cd-repo/image-1
           ports:
             - containerPort: 8080
-
+---
 apiVersion: v1
 kind: Service
 metadata:
