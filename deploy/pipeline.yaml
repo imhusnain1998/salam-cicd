@@ -1,13 +1,13 @@
 apiVersion: deploy.cloud.google.com/v1
 kind: DeliveryPipeline
 metadata:
-  name: gke-cicd-pipeline
+  name: salam-cicd-pipeline
   labels:
     app: cicd
 description: cicd delivery pipeline
 serialPipeline:
   stages:
-  - targetId: dev
+  - targetId: uat
     # profiles:
     # - dev
   # - targetId: staging
